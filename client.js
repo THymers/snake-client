@@ -15,6 +15,14 @@ const connect = function () {
     console.log('Name: TFH');
 
   });
+// move up one square (unless facing down)
+  //conn.on('connect', () => {
+    //console.log("Move: up");
+ // });
+// Send "Move: up" every 50 milliseconds
+//setInterval(() => {
+  //conn.write("Move: up");
+//}, 50);
 
   // Event handler for incoming data
   conn.on('data', (data) => {
