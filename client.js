@@ -12,7 +12,7 @@ const connect = function () {
 
   // Event handler for successful connection
   conn.on('connect', () => {
-    console.log('Connected to the server!');
+    console.log('Name: TFH');
 
   });
 
