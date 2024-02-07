@@ -3,7 +3,8 @@ let connection;
 
 const sendMovement = (movement) => {
   if (connection) {
-    connection.write(movement);
+    const command = `Move: ${movement}`;
+    connection.write(command);
   }
 };
 
@@ -28,13 +29,13 @@ const handleUserInput = function (key) {
 
   //movement commands consol.log
   if (key === "w") {
-    console.log("Move: up");
+    sendMovement("up");
   } else if (key === "a") {
-    console.log("Move: left");
+    sendMovement("left");
   } else if (key === "s") {
-    console.log("Move: down");
+    sendMovement("down");
   } else if (key === "d") {
-    console.log("Move: right");
+    sendMovement("right");
   }
 };
 
