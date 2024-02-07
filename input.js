@@ -32,14 +32,18 @@ const handleUserInput = function (key) {
     process.exit();
   }
 
-  //movement commands consol.log
+  //movement commands
   if (key === "w") {
+    console.log("Move up!");
     sendMovement("up");
   } else if (key === "a") {
+    console.log("Move left!");
     sendMovement("left");
   } else if (key === "s") {
+    console.log("Move down!");
     sendMovement("down");
   } else if (key === "d") {
+    console.log("Move right!");
     sendMovement("right");
   }
 };
