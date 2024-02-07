@@ -21,6 +21,11 @@ const setupInput = (conn) => {
 
 const handleUserInput = function (key) {
   console.log("User pressed:", key);
+  if (key === "t") {
+    console.log("Tara is the best!");
+  } else if (key === "q") {
+    console.log("Thats's not the right button!");
+  }
 
   // If 'Ctrl+C' is pressed, exit the process
   if (key === "\u0003") {
